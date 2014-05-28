@@ -20,26 +20,23 @@ catalog_name | String |  Unique name for feed (to differentiate against multiple
 catalog_types    | String[] |Kinds of content in the feed. Acceptable values are: movies, shows, seasons, or episodes | *
 catalog_period  | String |  Interval of the feed. Acceptable values are full or incremental. See General section for details. | *
 _schema_version  | String | Schema version. Must be: "gwi_json_1.0" | *
-
+items | Object[] | The main object. Each piece of content has its own item in the array. (Array can be empty) | *
+items.id | String | Providers unique ID for the content item. | *
+items.title | String | Canonical Title. | *
+items.alt_titles | String |  An array of alternate titles. | |
+items.type | String |        Type of item. Can be either movie, show, episode, or season. | *
+items.release_year | String | Year title was released in original or US market. | * 
+items.premier  | String |   Date item premiered. Usually used for TV titles. | |
+items.network  | String |   Orignal Network content aired on. Only relveant for TV | |
+items.description | String | Synopsis or description of title. | |
+items.short_description | String | Shorter version of description. | |
+items.url   | String |      Destination URL to send consumers on Provider's site. This should be a deep link, at point of purchase. | |
+items.pg_rating | String |  TV or MPAA PG Rating. | |
+items.categories | String | Array of Genre's or general categories. (May be used to suggest content to user) | |
 ----
 
 
-  
- 
- * @apiSuccess {Object[]}   items             The main object. Each piece of content has its own item in the array. REQUIRED
- * @apiSuccess {String}     items.id          Providers unique ID for the content item. REQUIRED
- * @apiSuccess {String}     items.title       Canonical Title. REQUIRED
- * @apiSuccess {String[]}   items.alt_titles  An array of alternate titles. OPTIONAL
- * @apiSuccess {String}     items.type        Type of item. Can be either movie, show, episode, or season. REQUIRED
- * @apiSuccess {String}     items.release_year  Year title was released in original or US market. REQUIRED
- * @apiSuccess {String}     items.premier     Date item premiered. Usually used for TV titles. OPTIONAL
- * @apiSuccess {String}     items.network     Orignal Network content aired on. Only relveant for TV OPTIONAL
- * @apiSuccess {String}     items.description Synopsis or description of title. OPTIONAL
- * @apiSuccess {String}     items.short_description Shorter version of description. OPTIONAL
- * @apiSuccess {String}     items.url         Destination URL to send consumers on Provider's site. This should be a deep link, at point of purchase. REQUIRED
- * @apiSuccess {String}     items.pg_rating   TV or MPAA PG Rating. OPTIONAL
- * @apiSuccess {String[]}   items.categories  Array of Genre's or general categories. (May be used to suggest content to user) OPTIONAL
  * @apiSuccess {Object[]}   items.restrictions Array of valid and invalid markets. 
- * 
+ 
 
 
