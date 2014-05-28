@@ -374,6 +374,196 @@
           ]
         }
       ]
+    },
+    {
+      "id": "8995",
+      "title": "Planet of the Apes",
+      "alt_titles": [
+        "Optional Alternative Titles"
+      ],
+      "type": "movie",
+      "release_year": "2001",
+      "description": "The sudden appearance of one man in a world where apes are in charge and humans are enslaved serves as a challenge to the status quo in this exciting sci-fi thriller.",
+      "url": "http://www.provider.com/movies/planet-of-the-apes-8995",
+      "short_description": "An astronaut lands on a strange planet where talking apes rule over the human race.",
+      "mpaa_rating": "PG-13",
+      "user_rating": {
+        "count": "250",
+        "rating": "3.0"
+      },
+      "studio": "20th Century Fox",
+      "categories": [
+        "Sci-Fi/Fantasy",
+        "Adventure"
+      ],
+      "runtime": "7140",
+      "alt_ids": [
+        {
+          "type": "amg",
+          "value": "246306"
+        },
+        {
+          "type": "rovi",
+          "value": "3313536"
+        }
+      ],
+      "contributions": [
+        {
+          "role": "director",
+          "name": "Tim Burton"
+        },
+        {
+          "role": "actor",
+          "name": "Mark Whalberg"
+        },
+        {
+          "role": "actor",
+          "name": "Tim Roth"
+        }
+      ],
+      "artwork": [
+        {
+          "type": "thumbnail",
+          "url": "http://www.provider.com/thumbnail-image-url"
+        },
+        {
+          "type": "poster",
+          "url": "http://www.provider.com/poster-image-url"
+        },
+        {
+          "type": "scene",
+          "url": "http://www.provider.com/scene-image-url"
+        }
+      ],
+      "language_formats": [
+        {
+          "type": "audio",
+          "label": "English",
+          "format": "stereo",
+          "code": "en"
+        },
+        {
+          "type": "audio",
+          "label": "English Dolby Digital 5.1",
+          "format": "dolby-5.1",
+          "code": "en"
+        },
+        {
+          "type": "audio",
+          "label": "Español",
+          "format": "stero",
+          "code": "es"
+        },
+        {
+          "type": "audio",
+          "label": "French",
+          "format": "stereo",
+          "code": "fr"
+        },
+        {
+          "type": "subtitles",
+          "label": "English Subtitles",
+          "format": "",
+          "code": "en"
+        },
+        {
+          "type": "subtitles",
+          "label": "French Subtitles",
+          "format": "",
+          "code": "fr"
+        }
+      ],
+      "available_formats": [
+        {
+          "delivery_method": "stream",
+          "format": "sd",
+          "product_id": "24003183",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "rent",
+              "start": "2011-08-06T07:00:00Z",
+              "end": "2013-12-31T08:00:00Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "5.00"
+                },
+                {
+                  "currency": "Acme Points",
+                  "price": "250"
+                },
+                {
+                  "currency": "Bitcoin",
+                  "price": "0.001"
+                }
+              ]
+            },
+            {
+              "offer": "buy",
+              "start": "2011-08-06T07:00:00Z",
+              "end": "2013-12-31T08:00:00Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "12.00"
+                },
+                {
+                  "currency": "Acme Points",
+                  "price": "500"
+                },
+                {
+                  "currency": "Bitcoin",
+                  "price": "0.002"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "delivery_method": "stream",
+          "format": "hdx",
+          "product_id": "24003688",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "buy",
+              "start": "2011-08-06T07:00:00Z",
+              "end": "2019-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "12.00"
+                },
+                {
+                  "currency": "Acme Points",
+                  "price": "500"
+                },
+                {
+                  "currency": "Bitcoin",
+                  "price": "0.001"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "delivery_method": "mail",
+          "format": "dvd",
+          "standard": "ntsc",
+          "dvd_region": "1",
+          "product_id": "23786458",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "subscription",
+              "start": "2011-08-06T07:00:00Z",
+              "end": "2019-12-31T23:59:59Z",
+              "subscription_required": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }

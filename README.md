@@ -11,6 +11,9 @@ This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It mus
 ### Availabilities. 
 This is an optional array of items which specify consumer relevant information about the purchasing and/or viewing the content. We require some URL in order to send the consumer on relevant platforms. On other platforms, things like network or TV channel may used. See the spec for detailed information. 
 
+### Feed period
+It is best if provider gives a FULL snapshop feed everyday. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshop of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities don't go stale. 
+
 ## Feed Fields:
 
  Field Name | Type | Description | Required? 
@@ -53,8 +56,13 @@ available_formats.format | String | Quality of content. Usually _sd_ or _hd_ but
 available_formats.product_id | String | Partners propietary SKU or ID number | | 
 available_formats.product_url | String | URL to direct point of purchase. 
 available_formats.availabilities | Object[] | Array of specific availabilies. Mainly rent, buy, or purchase. | |
-available_formats.availabilities.offer | String | Kind of offer. We expect either _rent_, _buy_, or _subscription | |
-
+available_formats.availabilities.offer | String | Kind of offer. We expect either _rent_, _buy_, or _subscription_ | |
+available_formats.availabilities.start | String | Date of when content is available for purchase to consumer. | | 
+available_formats.availabilities.end | String | Date of when content expires. 
+available_formats.availabilities.subscription_required | Boolean| Specifies is subscription is required to view content. | |
+available_formats.availabilities.price | Object[] | List of prices in respective currencies.
+available_formats.availabilities.price.currency | String | Name of currency. ie. "USD" |  |
+available_formats.availabilities.price.price | String | Numerical value of price in respective currency. | | 
 ----
 
 
