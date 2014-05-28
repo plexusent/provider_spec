@@ -14,7 +14,7 @@ This is an optional array of items which specify consumer relevant information a
 ## Feed Fields:
 
  Field Name | Type | Description | Required? 
- -------------------------------------------
+ -----------|------|-------------|---------
  catalog_provider | String | Name of the content owner. | *
 ----
 
