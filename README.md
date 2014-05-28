@@ -22,6 +22,8 @@ catalog_period  | String |  Interval of the feed. Acceptable values are full or 
 _schema_version  | String | Schema version. Must be: "gwi_json_1.0" | *
 items | Object[] | The main object. Each piece of content has its own item in the array. (Array can be empty) | *
 items.id | String | Providers unique ID for the content item. | *
+items.show_id  | String | Optional reference to a parent show. | | 
+items.season_id | String | Optional reference to a parent season. | |
 items.title | String | Canonical Title. | *
 items.alt_titles | String |  An array of alternate titles. | |
 items.type | String |        Type of item. Can be either movie, show, episode, or season. | *
@@ -32,11 +34,35 @@ items.description | String | Synopsis or description of title. | |
 items.short_description | String | Shorter version of description. | |
 items.url   | String |      Destination URL to send consumers on Provider's site. This should be a deep link, at point of purchase. | |
 items.pg_rating | String |  TV or MPAA PG Rating. | |
-items.categories | String | Array of Genre's or general categories. (May be used to suggest content to user) | |
+items.categories | String | Array of Genre's or general categories. (May be used to suggest content to user). | |
+items.runtime | Integer | Runtime length of the property. In seconds. | | 
+items.contributions Object[] | An array of contributors. You may supply anythign but director and cast are most useful for matching titles | | 
+items.contributions.role | String | Type of contribution. We look for either _creator_, _cast_, or _dirctor_. Other roles may be supplied as well. | | 
+items.contributions.name | String | Name of the contributor. 
+artwork | Object[] | An array of Key art. URLs to the images are expected. | | 
+artwork.type | String| Type of art. Values expected are _thumbnail_, _poster_, or _scene | |
+artwork.url | String| URL to the image. | | 
+language_formats | Object[] | Array of languages and their formats.  | | 
+language_formats.type | String | Kind of format either _audio_ or _subtitles_  | | 
+language_formats.label | String | Descrition presented to the consumer.  | | 
+language_formats.format | String | Relevant encoding format. | | 
+language_formats.code | String | International code for language. Ie. _en_ for English. | | 
+available_formats | Object[] | Array of availabilities | |
+available_formats.delivery_method | String | Specifies method of consumer delivery. We expect either _stream_, _download_, _theatrical, _mail_, or _physical_ | |
+available_formats.format | String | Quality of content. Usually _sd_ or _hd_ but provider may specify their own properietary formats. 
+available_formats.product_id | String | Partners propietary SKU or ID number | | 
+available_formats.product_url | String | URL to direct point of purchase. 
+available_formats.availabilities | Object[] | Array of specific availabilies. Mainly rent, buy, or purchase. | |
+available_formats.availabilities.offer | String | Kind of offer. We expect either _rent_, _buy_, or _subscription | |
+
 ----
 
 
- * @apiSuccess {Object[]}   items.restrictions Array of valid and invalid markets. 
+ 
  
 
+
+### Future updates
+
+* As of now the feed is intended only for US markets. Shortly, the feed will be updated to accomodate availabilities in multiple markets, with multiple prices in their respective currencies. 
 
