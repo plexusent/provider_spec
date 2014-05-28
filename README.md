@@ -16,11 +16,14 @@ This is an optional array of items which specify consumer relevant information a
  Field Name | Type | Description | Required? 
  -----------|------|-------------|---------
  catalog_provider | String | Name of the content owner. | *
+catalog_name | String     Unique name for feed (to differentiate against multiple feeds). Can be same as catalog_provider | * 
+catalog_types    | String[] |Kinds of content in the feed. Acceptable values are: movies, shows, seasons, or episodes | *
+
 ----
 
 
- * @apiSuccess {String}     catalog_name      Unique name for feed (to differentiate against multiple feeds). It can be the same as the catalog_provider. REQUIRED
- * @apiSuccess {String[]}   catalog_types     Kinds of content in the feed. Acceptable values are: movies, shows, seasons, or episodes REQUIRED
+
+ * @apiSuccess {String[]}   
  * @apiSuccess {String}     catalog_period    Interval of the feed. Acceptable values are full or incremental. See General section for details.  REQUIRED
  * @apiSuccess {String}     _schema_version   Schema version. Must be: "gwi_json_1.0" REQUIRED
  * @apiSuccess {Object[]}   items             The main object. Each piece of content has its own item in the array. REQUIRED
