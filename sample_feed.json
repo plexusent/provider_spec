@@ -1,0 +1,379 @@
+{
+  "catalog_provider": "Amce Studios",
+  "catalog_name": "Amce Studios: TV",
+  "catalog_types": [
+    "shows",
+    "seasons",
+    "episodes"
+  ],
+  "catalog_period": "full",
+  "_schema_version": "gwi_json_1.0",
+  "items": [
+    {
+      "id": "999999",
+      "title": "Breaking Bad",
+      "alt_titles": [
+        
+      ],
+      "type": "show",
+      "release_year": "2008",
+      "premier": "2008-01-20",
+      "network": "AMC",
+      "description": "Walter White, a struggling high school chemistry teacher, is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman, with the aim of securing his family's financial future before he dies.",
+      "short_description": "A high school chemistry teacher dying of cancer makes meth in a risky gambit to provide for his family.",
+      "url": "http://www.provider.com/shows/breaking-bad-00001",
+      "tvpg_rating": "TV-14",
+      "user_rating": {
+        "count": "475101",
+        "rating": "9.6"
+      },
+      "categories": [
+        "Serial Drama",
+        "Crime Drama",
+        "suspense"
+      ],
+      "runtime": "3600",
+      "contributions": [
+        {
+          "role": "creator",
+          "name": "Vince Gilligan"
+        },
+        {
+          "role": "cast",
+          "name": "Bryan Cranston"
+        },
+        {
+          "role": "cast",
+          "name": "Aaron Paul"
+        },
+        {
+          "role": "cast",
+          "name": "Anna Gunn"
+        },
+        {
+          "role": "cast",
+          "name": "Dean Norris"
+        },
+        {
+          "role": "cast",
+          "name": "Betsy Brandt"
+        }
+      ],
+      "artwork": [
+        {
+          "type": "thumbnail",
+          "url": "http://www.provider.com/thumbnail-image-url"
+        },
+        {
+          "type": "poster",
+          "url": "http://www.provider.com/poster-image-url"
+        },
+        {
+          "type": "scene",
+          "url": "http://www.provider.com/scene-image-url"
+        }
+      ],
+      "language_formats": [
+        {
+          "type": "audio",
+          "label": "English",
+          "format": "stereo",
+          "code": "en"
+        },
+        {
+          "type": "audio",
+          "label": "English Dolby Digital 5.1",
+          "format": "dolby-5.1",
+          "code": "en"
+        },
+        {
+          "type": "subtitles",
+          "label": "English Subtitles",
+          "format": "",
+          "code": "en"
+        }
+      ]
+    },
+    {
+      "id": "111111",
+      "show_id": "999999",
+      "title": "Season 1",
+      "show_title": "Breaking Bad",
+      "type": "season",
+      "release_year": "2008",
+      "premier": "2008-01-20",
+      "network": "AMC",
+      "description": "Walter White, a struggling high school chemistry teacher, is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman, with the aim of securing his family's financial future before he dies.",
+      "short_description": "",
+      "url": "http://www.provider.com/shows/breaking-bad-00001",
+      "tvpg_rating": "TV-14",
+      "user_rating": {
+        "count": "475101",
+        "rating": "9.6"
+      },
+      "categories": [
+        "Serial Drama",
+        "Crime Drama",
+        "suspense"
+      ],
+      "runtime": "3600",
+      "contributions": [
+        {
+          "role": "creator",
+          "name": "Vince Gilligan"
+        },
+        {
+          "role": "cast",
+          "name": "Bryan Cranston"
+        },
+        {
+          "role": "cast",
+          "name": "Aaron Paul"
+        },
+        {
+          "role": "cast",
+          "name": "Anna Gunn"
+        },
+        {
+          "role": "cast",
+          "name": "Dean Norris"
+        },
+        {
+          "role": "cast",
+          "name": "Betsy Brandt"
+        }
+      ],
+      "artwork": [
+        {
+          "type": "thumbnail",
+          "url": "http://www.provider.com/thumbnail-image-url"
+        },
+        {
+          "type": "poster",
+          "url": "http://www.provider.com/poster-image-url"
+        },
+        {
+          "type": "scene",
+          "url": "http://www.provider.com/scene-image-url"
+        }
+      ],
+      "language_formats": [
+        {
+          "type": "audio",
+          "label": "English",
+          "format": "stereo",
+          "code": "en"
+        },
+        {
+          "type": "audio",
+          "label": "English Dolby Digital 5.1",
+          "format": "dolby-5.1",
+          "code": "en"
+        },
+        {
+          "type": "subtitles",
+          "label": "English Subtitles",
+          "format": "",
+          "code": "en"
+        }
+      ],
+      "available_formats": [
+        {
+          "delivery_method": "stream",
+          "format": "sd",
+          "product_id": "24003183",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "rent",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "24.00"
+                }
+              ]
+            },
+            {
+              "offer": "buy",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "34.00"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "delivery_method": "stream",
+          "format": "hdx",
+          "product_id": "24003188",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "buy",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "44.00"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "222222",
+      "show_id": "999999",
+      "season_id": "111111",
+      "title": "Cat's in the Bag...",
+      "show_title": "Breaking Bad",
+      "season_title": "Season 1",
+      "episode_number": "2",
+      "type": "episode",
+      "release_year": "2008",
+      "premier": "2008-01-27",
+      "network": "AMC",
+      "description": "Walt and Jesse attempt to tie up loose ends. The desperate situation gets more complicated with the flip of a coin. Walt's wife, Skyler, becomes suspicious of Walt's strange behavior.",
+      "short_description": "",
+      "url": "http://www.provider.com/shows/breaking-bad-season-1-cats-in-the-bag",
+      "tvpg_rating": "TV-14",
+      "user_rating": {
+        "count": "475101",
+        "rating": "9.6"
+      },
+      "categories": [
+        "Serial Drama",
+        "Crime Drama",
+        "suspense"
+      ],
+      "runtime": "3600",
+      "contributions": [
+        {
+          "role": "creator",
+          "name": "Vince Gilligan"
+        },
+        {
+          "role": "cast",
+          "name": "Bryan Cranston"
+        },
+        {
+          "role": "cast",
+          "name": "Aaron Paul"
+        },
+        {
+          "role": "guest star",
+          "name": "Max Arciniega"
+        }
+      ],
+      "artwork": [
+        {
+          "type": "thumbnail",
+          "url": "http://www.provider.com/thumbnail-image-url"
+        },
+        {
+          "type": "poster",
+          "url": "http://www.provider.com/poster-image-url"
+        },
+        {
+          "type": "scene",
+          "url": "http://www.provider.com/scene-image-url"
+        }
+      ],
+      "language_formats": [
+        {
+          "type": "audio",
+          "label": "English",
+          "format": "stereo",
+          "code": "en"
+        },
+        {
+          "type": "audio",
+          "label": "English Dolby Digital 5.1",
+          "format": "dolby-5.1",
+          "code": "en"
+        },
+        {
+          "type": "subtitles",
+          "label": "English Subtitles",
+          "format": "",
+          "code": "en"
+        }
+      ],
+      "available_formats": [
+        {
+          "delivery_method": "stream",
+          "format": "sd",
+          "product_id": "24003183",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "rent",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "4.00"
+                }
+              ]
+            },
+            {
+              "offer": "buy",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "6.00"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "delivery_method": "stream",
+          "format": "hdx",
+          "product_id": "",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "buy",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "USD",
+                  "price": "8.00"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "delivery_method": "mail",
+          "format": "dvd",
+          "standard": "ntsc",
+          "dvd_region": "1",
+          "product_id": "23786458",
+          "product_url": "http://optional_product_url",
+          "availabilities": [
+            {
+              "offer": "subscription",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "subscription_required": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
