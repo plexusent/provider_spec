@@ -12,7 +12,7 @@ This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It mus
 This is an optional array of items which specify consumer relevant information about the purchasing and/or viewing the content. We require some URL in order to send the consumer on relevant platforms. On other platforms, things like network or TV channel may used. See the spec for detailed information. 
 
 ### Feed period
-It is best if provider gives a FULL snapshop feed everyday. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshop of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities don't go stale. 
+It is best if provider gives a FULL snapshot feed everyday. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshot of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities don't go stale. 
 
 ## Feed Fields:
 
