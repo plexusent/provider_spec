@@ -1,7 +1,7 @@
 # GoWatchIt Affiliate Provider Data Feed Spec
 
 ## Purpose
-The spec is intended for content owners and distributors to supply information about where consumers can purchase and view film and telivision content. The spec has both optional and required elements. 
+The spec is intended for content owners and distributors to supply information about where consumers can purchase and view film and television content. The spec has both optional and required elements. 
 
 The data is split into two rough categories: _Metadata_ and _Availabilities_
 
@@ -12,7 +12,7 @@ This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It mus
 This is an optional array of items which specify consumer relevant information about the purchasing and/or viewing the content. We require some URL in order to send the consumer on relevant platforms. On other platforms, things like network or TV channel may used. See the spec for detailed information. 
 
 ### Feed period
-It is best if provider gives a FULL snapshot feed everyday. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshot of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities don't go stale. 
+It is advised that the provider gives a FULL snapshot feed every day. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshot of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities don't go stale. 
 
 ## Feed Fields:
 
