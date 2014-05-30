@@ -39,7 +39,7 @@ items.url   | String |      Destination URL to send consumers on Provider's site
 items.pg_rating | String |  TV or MPAA PG Rating. | |
 items.categories | String | Array of Genre's or general categories. (May be used to suggest content to user). | |
 items.runtime | Integer | Runtime length of the property. In seconds. | | 
-items.contributions Object[] | An array of contributors. You may supply anythign but director and cast are most useful for matching titles | | 
+items.contributions Object[] | An array of contributors. You may supply anything but director and cast are most useful for matching titles | | 
 items.contributions.role | String | Type of contribution. We look for either _creator_, _cast_, or _dirctor_. Other roles may be supplied as well. | | 
 items.contributions.name | String | Name of the contributor. 
 artwork | Object[] | An array of Key art. URLs to the images are expected. | | 
@@ -47,9 +47,9 @@ artwork.type | String| Type of art. Values expected are _thumbnail_, _poster_, o
 artwork.url | String| URL to the image. | | 
 language_formats | Object[] | Array of languages and their formats.  | | 
 language_formats.type | String | Kind of format either _audio_ or _subtitles_  | | 
-language_formats.label | String | Descrition presented to the consumer.  | | 
+language_formats.label | String | Description presented to the consumer.  | | 
 language_formats.format | String | Relevant encoding format. | | 
-language_formats.code | String | International code for language. Ie. _en_ for English. | | 
+language_formats.code | String | International code for language. ie. _en_ for English. | | 
 available_formats | Object[] | Array of availabilities | |
 available_formats.delivery_method | String | Specifies method of consumer delivery. We expect either _stream_, _download_, _theatrical, _mail_, or _physical_ | |
 available_formats.format | String | Quality of content. Usually _sd_ or _hd_ but provider may specify their own properietary formats. 
@@ -59,7 +59,7 @@ available_formats.availabilities | Object[] | Array of specific availabilies. Ma
 available_formats.availabilities.offer | String | Kind of offer. We expect either _rent_, _buy_, or _subscription_ | |
 available_formats.availabilities.start | String | Date of when content is available for purchase to consumer. | | 
 available_formats.availabilities.end | String | Date of when content expires. 
-available_formats.availabilities.subscription_required | Boolean| Specifies is subscription is required to view content. | |
+available_formats.availabilities.subscription_required | Boolean| Specifies if subscription is required to view content. | |
 available_formats.availabilities.price | Object[] | List of prices in respective currencies.
 available_formats.availabilities.price.currency | String | Name of currency. ie. "USD" |  |
 available_formats.availabilities.price.price | String | Numerical value of price in respective currency. | | 
