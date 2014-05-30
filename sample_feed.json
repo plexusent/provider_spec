@@ -2,6 +2,7 @@
   "catalog_provider": "Amce Studios",
   "catalog_name": "Amce Studios: TV",
   "catalog_types": [
+    "movies",
     "shows",
     "seasons",
     "episodes"
