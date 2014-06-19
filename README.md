@@ -16,7 +16,7 @@ It is advised that the provider gives a FULL snapshot feed every day. This enabl
 
 ### Distributing the feed
 The ideal method for distributing the feed is via a RESTFul API driven web service. If the content owner requires authentication, we recommend using an API-KEY, or similar difficult to predict identification token to be included in the URL. The recommended URL structure is: 
-`http://partner-domain.com/api/watchable_feed.json?api_key=1234`
+`http://partner-domain.com/api/watchables.json?api_key=1234`
 
 ## Feed Fields:
 
