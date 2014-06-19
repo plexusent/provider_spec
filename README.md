@@ -14,6 +14,10 @@ This is an optional array of items which specify consumer-relevant information a
 ### Feed period
 It is advised that the provider gives a FULL snapshot feed every day. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshot of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities remain current. 
 
+### Distributing the feed
+The ideal method for distributing the feed is via a RESTFul API driven web service. If the content owner requires authentication, we recommend using an API-KEY, or similar difficult to predict identification token to be included in the URL. The recommended URL structure is: 
+`http://partner-domain.com/api/watchable_feed.json?api_key=1234`
+
 ## Feed Fields:
 
  Field Name | Type | Description | Required? 
