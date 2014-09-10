@@ -6,7 +6,7 @@ The spec is intended for content owners and distributors to supply information a
 The data is split into two rough categories: _Metadata_ and _Availabilities_
 
 ### Metadata
-This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It must also include a provider's own unique ID. GWI Can use industry IDs map titles to our canonical database. In the absense of known industry IDs, GoWathIt will use title metadata (Combining elements of Title, Release Date, Language, Director and/or Cast) to match titles to our canonical database. A minimum of title and release year are required, but items such as cast or director are very helpful to help disambiguate titles when there are different properties with the same title. 
+This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It must also include a provider's own unique ID. GWI Can use industry IDs map titles to our canonical database. In the absense of known industry IDs, GoWatchIt will use title metadata (Combining elements of Title, Release Date, Language, Director and/or Cast) to match titles to our canonical database. A minimum of title and release year are required, but items such as cast or director are very helpful to help disambiguate titles when there are different properties with the same title. 
 
 ### Availabilities. 
 This is an optional array of items which specify consumer-relevant information about purchasing and/or viewing watchable content. GoWatchIt requires a URL in order to send the consumer to purchase, rent, or view the content. For television, attributes such as networks or TV channels may be useful to include. See the spec for detailed information. 
