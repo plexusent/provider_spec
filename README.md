@@ -27,7 +27,7 @@ For matching your metadata to our database, we require the following fields insi
 * **contributions** At least a **director** is required for all Movies. It is recommended to have contributions present for TV items.
 * **url** or **available_formats.product_url** A URL must be present either for the entire item, or for each availability. (It's fine to have both)
 
-*Fields which are required in some cases as noted above are marked as "†" in the table below.*
+*Fields which are required in some cases as noted above are marked as "†", in the "required" column below.*
 
 ## Feed Fields:
 
@@ -69,8 +69,8 @@ items.available_formats | Object[] | Array of availabilities | |
 items.available_formats.delivery_method | String | Specifies method of consumer delivery. We expect either _stream_, _download_, _theatrical, _mail_, or _physical_ | |
 items.available_formats.format | String | Quality of content. Usually _sd_ or _hd_ but provider may specify their own proprietary formats. 
 items.available_formats.product_id | String | Partners proprietary SKU or ID number | | 
-items.available_formats.product_url | String | URL to direct point of purchase. 
-items.available_formats.availabilities | Object[] | Array of specific availabilities. Mainly rent, buy, or purchase. | † |
+items.available_formats.product_url | String | URL to direct point of purchase. | † |
+items.available_formats.availabilities | Object[] | Array of specific availabilities. Mainly rent, buy, or purchase. | |
 items.available_formats.availabilities.offer | String | Kind of offer. We expect either _rent_, _buy_, or _subscription_ | |
 items.available_formats.availabilities.start | String | Date of when content is available for purchase to consumer. | | 
 items.available_formats.availabilities.end | String | Date of when content expires. 
