@@ -1,7 +1,7 @@
 # GoWatchIt Affiliate Provider Data Feed Spec
 
 ## Purpose
-The spec is intended for content owners and distributors to supply information about where consumers can purchase and view film and television content. The spec has both optional and required elements. 
+The specification is intended for content owners and distributors to supply information about where consumers can purchase and view film and television content. The spec has both optional and required elements. 
 
 The data is split into two rough categories: _Metadata_ and _Availabilities_
 
@@ -11,7 +11,7 @@ This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It mus
 ### Availabilities
 This is an array of items which specify consumer-relevant information about purchasing and/or viewing watchable content. GoWatchIt requires a URL in order to send the consumer to purchase, rent, or view the content. For television, attributes such as networks or TV channels may be useful to include. See the spec for detailed information. If this array is empty, it will indicate there are no current availabilities.
 
-### Feed period
+### Feed Update Period
 It is advised that the provider gives a FULL snapshot feed every day. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshot of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities remain current. 
 
 ### Distributing the feed
@@ -24,6 +24,7 @@ For matching your metadata to our database, we require the following fields insi
 * **type** One of "movie", "show", "season", or "episode"
 * **release_year** The year this item was released or first aired
 * **premiere** For TV seasons and episodes, this is required
+* **available_formats** and **available_formats.availabilities** If current availabilities exist, both arrays are required. If no availabilties exist for a specific format, omit that format, or include an empty array for its `avaialbilites`. If no formats are available at all, `available_formats` must be provided as an empty array.
 * **contributions** At least a **director** is required for all Movies. It is recommended to have contributions present for TV items.
 * **url** or **available_formats.product_url** A URL must be present either for the entire item, or for each availability. (It's fine to have both)
 
