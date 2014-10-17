@@ -18,7 +18,7 @@ It is advised that the provider gives a FULL snapshot feed every day. This enabl
 The ideal method for distributing the feed is via a RESTFul API driven web service. If the content owner requires authentication, we recommend using an API-KEY, or similar difficult to predict identification token to be included in the URL. The recommended URL structure is: 
 `http://partner-domain.com/api/watchables.json?api_key=1234`
 
-## Required Feed Fields
+### Required Feed Fields
 For matching your metadata to our database, we require the following fields inside each "item":
 * **title** The title of the Movie/Show/Season/Episode
 * **type** One of "movie", "show", "season", or "episode"
@@ -26,7 +26,8 @@ For matching your metadata to our database, we require the following fields insi
 * **premiere** For TV seasons and episodes, this is required
 * **contributions** At least a **director** is required for all Movies. It is recommended to have contributions present for TV items.
 * **url** or **available_formats.product_url** A URL must be present either for the entire item, or for each availability. (It's fine to have both)
-Fields which are required in some cases as noted above are marked as "†" in the table below.
+
+*Fields which are required in some cases as noted above are marked as "†" in the table below.*
 
 ## Feed Fields:
 
