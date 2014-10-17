@@ -9,7 +9,7 @@ The data is split into two rough categories: _Metadata_ and _Availabilities_
 This includes unique industry-wide identifiers such as a ROVI or EIDR ID. It must also include a provider's own unique ID. GWI Can use industry IDs map titles to our canonical database. In the absence of known industry IDs, GoWatchIt will use title metadata (Combining elements of Title, Release Date, Language, Director and/or Cast) to match titles to our canonical database. A minimum of title and release year are required, but items such as cast or director are very helpful to help disambiguate titles when there are different properties with the same title. 
 
 ### Availabilities
-This is an optional array of items which specify consumer-relevant information about purchasing and/or viewing watchable content. GoWatchIt requires a URL in order to send the consumer to purchase, rent, or view the content. For television, attributes such as networks or TV channels may be useful to include. See the spec for detailed information. 
+This is an array of items which specify consumer-relevant information about purchasing and/or viewing watchable content. GoWatchIt requires a URL in order to send the consumer to purchase, rent, or view the content. For television, attributes such as networks or TV channels may be useful to include. See the spec for detailed information. If this array is empty, it will indicate there are no current availabilities.
 
 ### Feed period
 It is advised that the provider gives a FULL snapshot feed every day. This enables us to give the most accurate price to consumers on a daily basis. It is possible to supply a smaller "incremental" feed. If this feed is supplied we will only update/append to our existing snapshot of the provider data. If supplying incremental feeds, it is important to also supply a full feed, at least once a week--again, so that the prices and availabilities remain current. 
@@ -60,17 +60,17 @@ items.contributions.name | String | Name of the contributor.
 items.artwork | Object[] | An array of Key art. URLs to the images are expected. | | 
 items.artwork.type | String| Type of art. Values expected are _thumbnail_, _poster_, or _scene | |
 items.artwork.url | String| URL to the image. | | 
-items.language_formats | Object[] | Array of languages and their formats.  | | 
+items.language_formats | Object[] | Array of languages and their formats.  | ‡ | 
 items.language_formats.type | String | Kind of format either _audio_ or _subtitles_  | | 
 items.language_formats.label | String | Description presented to the consumer.  | | 
 items.language_formats.format | String | Relevant encoding format. | | 
 items.language_formats.code | String | International code for language. ie. _en_ for English. | | 
-items.available_formats | Object[] | Array of availabilities | |
+items.available_formats | Object[] | Array of availabilities | ‡ |
 items.available_formats.delivery_method | String | Specifies method of consumer delivery. We expect either _stream_, _download_, _theatrical, _mail_, or _physical_ | |
 items.available_formats.format | String | Quality of content. Usually _sd_ or _hd_ but provider may specify their own proprietary formats. 
 items.available_formats.product_id | String | Partners proprietary SKU or ID number | | 
 items.available_formats.product_url | String | URL to direct point of purchase. | † |
-items.available_formats.availabilities | Object[] | Array of specific availabilities. Mainly rent, buy, or purchase. | |
+items.available_formats.availabilities | Object[] | Array of specific availabilities. Mainly rent, buy, or purchase. | ‡ |
 items.available_formats.availabilities.offer | String | Kind of offer. We expect either _rent_, _buy_, or _subscription_ | |
 items.available_formats.availabilities.start | String | Date of when content is available for purchase to consumer. | | 
 items.available_formats.availabilities.end | String | Date of when content expires. 
@@ -80,7 +80,7 @@ items.available_formats.availabilities.price.currency | String | Name of currenc
 items.available_formats.availabilities.price.price | String | Numerical value of price in respective currency. | | 
 ----
 
-
+*Notes: † indicates required in some cases (such as TV). ‡ empty arrays indicate no current availabilites *
  
  
 
