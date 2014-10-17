@@ -80,7 +80,9 @@ items.available_formats.availabilities.price.currency | String | Name of currenc
 items.available_formats.availabilities.price.price | String | Numerical value of price in respective currency. | | 
 ----
 
-*Notes: † indicates required in some cases (such as TV). ‡ empty arrays indicate no current availabilites *
+*Notes:*
+ * † *indicates required in some cases (such as TV).*
+ * ‡ *empty arrays indicate no current availabilites.*
  
  
 
