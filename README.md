@@ -35,7 +35,7 @@ items.title | String | Canonical Title. | *
 items.alt_titles | String |  An array of alternate titles. | |
 items.type | String |        Type of item. Can be either movie, show, episode, or season. | *
 items.release_year | String | Year title was released in original or US market. | * 
-items.premier  | String |   Date item premiered. Usually used for TV titles. | |
+items.premiere  | String |   Date item premiered. Usually used for TV titles. | |
 items.network  | String |   Orignal Network content aired on. Only relveant for TV | |
 items.description | String | Synopsis or description of title. | |
 items.short_description | String | Shorter version of description. | |
