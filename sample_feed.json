@@ -15,7 +15,7 @@
       "title": "Breaking Bad",
       "locale": "en_US",
       "alt_titles": [
-        
+
       ],
       "type": "show",
       "release_year": "2008",
@@ -101,7 +101,7 @@
       "title": "Breaking Bad",
       "locale": "fr_FR",
       "alt_titles": [
-        
+
       ],
       "type": "show",
       "release_year": "2008",
@@ -179,6 +179,28 @@
           "label": "French Subtitles",
           "format": "",
           "code": "fr"
+        }
+      ],
+      "available_formats": [
+        {
+          "delivery_method": "stream",
+          "locale": "fr_FR",
+          "format": "sd",
+          "product_id": "24003183",
+          "product_url": "http://product_url.fr",
+          "availabilities": [
+            {
+              "offer": "buy",
+              "start": "2010-07-01T07:00:00Z",
+              "end": "2016-12-31T23:59:59Z",
+              "price": [
+                {
+                  "currency": "EUR",
+                  "price": "4.99"
+                }
+              ]
+            },
+          ]
         }
       ]
     },
