@@ -8,11 +8,12 @@
     "episodes"
   ],
   "catalog_period": "full",
-  "_schema_version": "gwi_json_1.0",
+  "_schema_version": "gwi_json_1.1",
   "items": [
     {
       "id": "999999",
       "title": "Breaking Bad",
+      "locale": "en_US",
       "alt_titles": [
         
       ],
@@ -96,9 +97,96 @@
       ]
     },
     {
+      "id": "999999-fr",
+      "title": "Breaking Bad",
+      "locale": "fr_FR",
+      "alt_titles": [
+        
+      ],
+      "type": "show",
+      "release_year": "2008",
+      "premiere": "2008-01-20",
+      "network": "AMC",
+      "description": "Walter White, un professeur de chimie de lycée qui lutte, est diagnostiqué avec un cancer avancé du poumon. Il se tourne vers une vie de crime, produisant et vendant de la méthamphétamine accompagné d'un ancien élève, Jesse Pinkman, dans le but d'assurer l'avenir financier de sa famille avant sa mort.",
+      "short_description": "Un professeur de chimie du lycée qui meurt de cancer fait de la méthodologie une gambition risquée pour assurer sa famille.",
+      "url": "http://www.provider.fr/serie/breaking-bad-00001",
+      "tvpg_rating": "TV-14",
+      "user_rating": {
+        "count": "475101",
+        "rating": "9.6"
+      },
+      "categories": [
+        "Serial Drama",
+        "Crime Drama",
+        "suspense"
+      ],
+      "runtime": "3600",
+      "contributions": [
+        {
+          "role": "creator",
+          "name": "Vince Gilligan"
+        },
+        {
+          "role": "cast",
+          "name": "Bryan Cranston"
+        },
+        {
+          "role": "cast",
+          "name": "Aaron Paul"
+        },
+        {
+          "role": "cast",
+          "name": "Anna Gunn"
+        },
+        {
+          "role": "cast",
+          "name": "Dean Norris"
+        },
+        {
+          "role": "cast",
+          "name": "Betsy Brandt"
+        }
+      ],
+      "artwork": [
+        {
+          "type": "thumbnail",
+          "url": "http://www.provider.fr/thumbnail-image-url"
+        },
+        {
+          "type": "poster",
+          "url": "http://www.provider.fr/poster-image-url"
+        },
+        {
+          "type": "scene",
+          "url": "http://www.provider.fr/scene-image-url"
+        }
+      ],
+      "language_formats": [
+        {
+          "type": "audio",
+          "label": "French",
+          "format": "stereo",
+          "code": "fr"
+        },
+        {
+          "type": "audio",
+          "label": "French Dolby Digital 5.1",
+          "format": "dolby-5.1",
+          "code": "fr"
+        },
+        {
+          "type": "subtitles",
+          "label": "French Subtitles",
+          "format": "",
+          "code": "fr"
+        }
+      ]
+    },
+    {
       "id": "111111",
       "show_id": "999999",
       "title": "Season 1",
+      "locale": "en_US",
       "show_title": "Breaking Bad",
       "type": "season",
       "release_year": "2008",
@@ -181,6 +269,7 @@
       "available_formats": [
         {
           "delivery_method": "stream",
+          "locale": "en_US",
           "format": "sd",
           "product_id": "24003183",
           "product_url": "http://optional_product_url",
@@ -211,6 +300,7 @@
         },
         {
           "delivery_method": "stream",
+          "locale": "en_US",
           "format": "hdx",
           "product_id": "24003188",
           "product_url": "http://optional_product_url",
@@ -235,6 +325,7 @@
       "show_id": "999999",
       "season_id": "111111",
       "title": "Cat's in the Bag...",
+      "locale": "en_US",
       "show_title": "Breaking Bad",
       "season_title": "Season 1",
       "episode_number": "2",
@@ -311,6 +402,7 @@
       "available_formats": [
         {
           "delivery_method": "stream",
+          "locale": "en_US",
           "format": "sd",
           "product_id": "24003183",
           "product_url": "http://optional_product_url",
@@ -341,6 +433,7 @@
         },
         {
           "delivery_method": "stream",
+          "locale": "en_US",
           "format": "hdx",
           "product_id": "",
           "product_url": "http://optional_product_url",
@@ -360,6 +453,7 @@
         },
         {
           "delivery_method": "mail",
+          "locale": "en_US",
           "format": "dvd",
           "standard": "ntsc",
           "dvd_region": "1",
@@ -379,6 +473,7 @@
     {
       "id": "8995",
       "title": "Planet of the Apes",
+      "locale": "en_US",
       "alt_titles": [
         "Optional Alternative Titles"
       ],
@@ -477,6 +572,7 @@
       "available_formats": [
         {
           "delivery_method": "stream",
+          "locale": "en_US",
           "format": "sd",
           "product_id": "24003183",
           "product_url": "http://optional_product_url",
@@ -523,6 +619,7 @@
         },
         {
           "delivery_method": "stream",
+          "locale": "en_US",
           "format": "hdx",
           "product_id": "24003688",
           "product_url": "http://optional_product_url",
@@ -550,6 +647,7 @@
         },
         {
           "delivery_method": "mail",
+          "locale": "en_US",
           "format": "dvd",
           "standard": "ntsc",
           "dvd_region": "1",
