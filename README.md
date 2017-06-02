@@ -38,7 +38,7 @@ For matching your metadata to our database, we require the following fields insi
 catalog_name | String |  Unique name for feed (to differentiate against multiple feeds). Can be same as catalog_provider | *
 catalog_types    | String[] |Kinds of content in the feed. Acceptable values are: movies, shows, seasons, or episodes | *
 catalog_period  | String |  Interval of the feed. Acceptable values are full or incremental. See General section for details. | *
-_schema_version  | String | Schema version. Must be: "gwi_json_1.0" | *
+_schema_version  | String | Schema version. Must be: "gwi_json_1.1" | *
 items | Object[] | The main object. Each piece of content has its own item in the array. (Array can be empty) | *
 items.id | String | Providers unique ID for the content item. | *
 items.show_id  | String | Optional reference to a parent show. | |
